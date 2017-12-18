@@ -1,0 +1,12 @@
+<launch>
+  <!-- <param name="/use_sim_time" value="true" /> -->
+  <arg name="model" default="/home/jason/catkin_ws/src/t3_robot/urdf/t3robot_v1.urdf.xacro"/>
+  <arg name="rvizconfig" default="$(find robot_localization)/rviz/odom_turtlebot3.rviz" />
+
+<!-- rviz display -->
+  <include file="$(find urdf_tutorial)/launch/display.launch">
+    <arg name="model" value="$(arg model)" />
+    <arg name="rvizconfig" value="$(arg rvizconfig)"/>
+  </include>
+
+</launch>
