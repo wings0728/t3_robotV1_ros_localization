@@ -2,8 +2,8 @@
   <param name="/use_sim_time" value="true" />
   <arg name="model" default="/home/jason/catkin_ws/src/t3_robot/urdf/t3robot_v1.urdf.xacro"/>
   <arg name="rvizconfig" default="$(find robot_localization)/rviz/odom_turtlebot3.rviz" />
-  <arg name="bag_filename" default="/home/jason/download/bagfiles/t3_test1.bag"/>
-  <rosparam command="load" file="$(find robot_localization)/params/ekf_template_test.yaml" />
+  <arg name="bag_filename" default="/home/jason/download/bagfiles/map_test1.bag"/>
+  <rosparam command="load" file="$(find robot_localization)/params/ekf_template_test0.yaml" />
 
   <node pkg="robot_localization" type="ekf_localization_node" name="ekf_se_odom" clear_params="true" />
 
@@ -55,7 +55,7 @@
   <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)">
   </node>
 
-  <node name="playbag" pkg="rosbag" type="play" args="--clock $(arg bag_filename)">
+  <node name="playbag" pkg="rosbag" type="play" args="--clock -r 7 $(arg bag_filename)">
 
   </node>
 

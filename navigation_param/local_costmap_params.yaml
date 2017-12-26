@@ -15,6 +15,6 @@ local_costmap:
     - {name: sonar,           type: "range_sensor_layer::RangeSensorLayer"}
     - {name: inflation_layer, type: "costmap_2d::InflationLayer"}
   sonar:
-    topics: ['/sonar_1', '/sonar_3', '/sonar_4', '/sonar_6']  
+    topics: ['/sonar_0', '/sonar_1','/sonar_2', '/sonar_3', '/sonar_4', '/sonar_6', '/sonar_7', '/sonar_8', '/sonar_9', '/sonar_10', '/sonar_11']  
   inflation_layer:
-    inflation_radius: 0.05
+    inflation_radius: 0.10

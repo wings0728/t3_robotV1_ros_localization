@@ -1,4 +1,8 @@
 GlobalPlanner:
+  use_dijkstra: ture
+  use_quadratic: ture
+  use_grid_path: false
+  old_navfn_behavior: false
 
   ost_factor: 0.55
   neutral_cost: 66

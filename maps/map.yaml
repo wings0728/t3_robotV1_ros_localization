@@ -1,7 +1,7 @@
 image: /home/jason/catkin_ws/src/robot_localization/maps/map.pgm
 resolution: 0.050000
-#origin: [0, 0, 0]
-origin: [-119.5, -130, 0]
+origin: [-110, -189, 0]
+#origin: [-110, 11, -1.57]
 negate: 0
 occupied_thresh: 0.65
 free_thresh: 0.19

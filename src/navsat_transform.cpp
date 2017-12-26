@@ -461,7 +461,7 @@ namespace RobotLocalization
                      !std::isnan(msg->latitude) &&
                      !std::isnan(msg->longitude)&&
                      (msg->status.status==2)&&
-                     (msg->position_covariance[0]<1.5));
+                     (msg->position_covariance[0]<4.0));
 
     if (good_gps)
     {
