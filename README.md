@@ -1,10 +1,4 @@
 
-robot_localization
-
-
-robot_localization is a package of nonlinear state estimation nodes. The package was developed by Charles River Analytics, Inc.
-
-Please see documentation here: http://wiki.ros.org/robot_localization
 
 #T3室外定位包使用教程（对应ros版本 - kinetic）
 ##安装
@@ -29,3 +23,12 @@ ps:如果编译过程中出现缺少某些库，安装对应的库即可。
 
 ##备注
 
+
+
+
+robot_localization
+
+
+robot_localization is a package of nonlinear state estimation nodes. The package was developed by Charles River Analytics, Inc.
+
+Please see documentation here: http://wiki.ros.org/robot_localization
