@@ -1,0 +1,22 @@
+global_costmap:
+  global_frame: /map
+  robot_base_frame: /base_footprint
+  update_frequency: 2.0
+  publish_frequency: 0.1
+  static_map: true
+  transform_tolerance: 1.0
+
+
+  plugins:
+    - {name: static_map,      type: "costmap_2d::StaticLayer"}
+    - {name: inflation_layer, type: "costmap_2d::InflationLayer"}
+    - {name: sonar,           type: "range_sensor_layer::RangeSensorLayer"}
+
+  inflation_layer:
+    inflation_radius: 0.3
+
+  sonar:
+    topics: ['/sonar_0', '/sonar_1','/sonar_2', '/sonar_3', '/sonar_4', '/sonar_6', '/sonar_7', '/sonar_8', '/sonar_9', '/sonar_10', '/sonar_11']  #, 
+    no_readings_timeout: 0.0
+    clear_threshold: 0.0
+
