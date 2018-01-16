@@ -2,7 +2,7 @@
   <!-- <param name="/use_sim_time" value="true" /> -->
   <arg name="model" default="$(find robot_localization)/urdf/t3robot_v1.urdf.xacro"/>
   <arg name="rvizconfig" default="$(find robot_localization)/rviz/odom_turtlebot3.rviz" />
-  <rosparam command="load" file="$(find robot_localization)/params/ekf_template_xyf.yaml" />
+  <rosparam command="load" file="$(find robot_localization)/params/ekf_template_test.yaml" />
 
 <!-- localization odom -->
   <node pkg="robot_localization" type="ekf_localization_node" name="ekf_se_odom" clear_params="true" />
